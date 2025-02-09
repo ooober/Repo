@@ -1,4 +1,4 @@
-]]]]]/* Reset some default styles */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +18,13 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #777, #333);  /* Smooth grey-to-black gradient */
+    background-color: #333;  /* Simple dark background for the header */
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Light shadow for the header */
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow for subtle depth */
 }
 
 .header-content {
@@ -41,6 +41,24 @@ header {
 h1 {
     color: white;
     font-size: 24px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;  /* Highlight color on hover */
 }
 
 /* Game Container */
