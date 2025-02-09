@@ -39,21 +39,55 @@ header {
 .game-selection {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 games per row */
-    gap: 15px;
+    gap: 10px; /* Reduced spacing between rows */
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 /* Game Icons */
 .game-icon img {
-    width: 120px;  /* Set same width */
-    height: 120px; /* Set same height */
-    object-fit: cover; /* Ensures consistent sizing without distortion */
-    border-radius: 10px; /* Rounded corners */
+    width: 100px;  /* Smaller but consistent */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
 /* Hover Effect */
 .game-icon img:hover {
     transform: scale(1.1);
+}
+
+/* Game Page - Larger Iframe */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.game-frame {
+    width: 90%; /* Adjusted to fit screen better */
+    max-width: 900px; /* Limits excessive stretching */
+    height: 600px; /* Increased height for better gameplay */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Back to Home Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e6b800;
 }
