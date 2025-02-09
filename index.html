@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
+    <title>Esa's Unblocked</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    
+    <!-- Header -->
     <header>
-        <div class="header-content">
-            <img src="your-icon.png" alt="Icon" class="header-icon">
-            <h1>Esa's unblocked</h1>
-        </div>
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#games">Games</a>
-        </nav>
+        <h1>Esa's Unblocked Games</h1>
     </header>
 
-    <!-- Game Container -->
-    <div class="game-container" id="games">
-        <div class="game-title">Basketball Stars</div>
-        <iframe id="game-frame" src="https://htmlxm.github.io/h/basketball-stars" 
-                class="game-frame" title="Basketball Stars" 
-                allow="accelerometer; gyroscope; gamepad; autoplay; payment; fullscreen; microphone; clipboard-read; clipboard-write" 
-                sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups-to-escape-sandbox"></iframe>
-    </div>
+    <!-- Game Selection (Clickable Images) -->
+    <section class="game-selection">
+        <div class="game-icon" data-game="https://htmlxm.github.io/h/basketball-stars">
+            <img src="basketball-stars.png" alt="Basketball Stars">
+        </div>
+        <div class="game-icon" data-game="https://htmlxm.github.io/h/run-3">
+            <img src="run3.png" alt="Run 3">
+        </div>
+        <div class="game-icon" data-game="https://htmlxm.github.io/h/moto-x3m">
+            <img src="moto-x3m.png" alt="Moto X3M">
+        </div>
+    </section>
 
+    <!-- Loaded Games Area -->
+    <section id="loaded-games"></section>
+
+    <script src="script.js"></script>
 </body>
 </html>
