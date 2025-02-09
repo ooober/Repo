@@ -39,25 +39,25 @@ header {
 .game-selection {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 games per row */
-    gap: 0px; /* No spacing */
-    width: 100vw; /* Takes full screen width */
+    gap: 10px; /* Small spacing so they don’t interfere */
+    width: 90vw; /* Use most of the screen width */
+    margin: auto; /* Center the grid */
 }
 
 /* Game Icons */
 .game-icon {
-    width: 100%; /* Ensures each icon fills its space */
+    width: 100%; /* Each icon fills its space */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px; /* Adds space around for a better look */
 }
 
 .game-icon img {
-    width: 100%;  /* Stretch to fill each cell */
-    height: 100px; /* Set a fixed height so all icons are the same */
-    object-fit: cover; /* Ensures images are cropped properly */
-    border-radius: 20px; /* Rounded corners */
-    border: 4px solid #ffcc00; /* Nice border color */
+    width: 100%;  /* Ensures it fills the cell */
+    height: 160px; /* Bigger, consistent height */
+    object-fit: cover; /* Keeps proportions clean */
+    border-radius: 15px; /* Rounded corners */
+    border: 4px solid #ffcc00; /* Nice yellow border */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
