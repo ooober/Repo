@@ -46,19 +46,25 @@ header {
 /* Game Icons */
 .game-icon {
     width: 100%; /* Ensures each icon fills its space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Adds space around for a better look */
 }
 
 .game-icon img {
-    width: 100%;  /* Stretches to fill the column */
+    width: 90%;  /* Slight padding inside each grid cell */
     height: auto; /* Maintains aspect ratio */
     object-fit: cover;
-    border-radius: 0; /* No rounding to make it seamless */
-    transition: transform 0.2s ease-in-out;
+    border-radius: 20px; /* Rounded corners */
+    border: 4px solid #ffcc00; /* Nice border color */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 /* Hover Effect */
 .game-icon img:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5); /* Adds a soft glow effect */
 }
 
 /* Game Page - Larger Iframe */
