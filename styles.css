@@ -40,25 +40,19 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 games per row */
     gap: 0px; /* No spacing */
-    justify-content: center;
-    padding: 0;
-    width: 100%;
-    max-width: 750px; /* Controls max width for clean layout */
-    margin: 0 auto;
+    width: 100vw; /* Takes full screen width */
 }
 
 /* Game Icons */
 .game-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%; /* Ensures each icon fills its space */
 }
 
 .game-icon img {
-    width: 150px;  /* Larger icons */
-    height: 150px; /* Same height to match width */
+    width: 100%;  /* Stretches to fill the column */
+    height: auto; /* Maintains aspect ratio */
     object-fit: cover;
-    border-radius: 5px; /* Slight rounding for clean look */
+    border-radius: 0; /* No rounding to make it seamless */
     transition: transform 0.2s ease-in-out;
 }
 
