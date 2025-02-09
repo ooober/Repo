@@ -20,6 +20,18 @@ header {
     z-index: 1000;
 }
 
+/* Back Button */
+.back-button {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
 /* Game Selection */
 .game-selection {
     margin-top: 80px;
@@ -40,37 +52,18 @@ header {
     transform: scale(1.05);
 }
 
-/* Loaded Games */
-#loaded-games {
+/* Game Page */
+#game-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.game-container {
-    background-color: #333;
-    border: 5px solid #111;
-    border-radius: 8px;
-    width: 80%;
-    padding: 10px;
+    height: 100vh;
+    padding-top: 60px;
 }
 
 .game-frame {
-    width: 100%;
-    height: 500px;
+    width: 80%;
+    height: 80vh;
     border: none;
     border-radius: 5px;
-}
-
-/* Mobile-Friendly Design */
-@media (max-width: 600px) {
-    .game-selection {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-
-    .game-frame {
-        height: 300px;
-    }
 }
