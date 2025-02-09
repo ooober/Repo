@@ -126,3 +126,11 @@ header {
 .nav-links a:hover {
     color: #ffcc00;
 }
+/* Joystick Icon */
+.joystick-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
