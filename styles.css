@@ -1,4 +1,4 @@
-/* Reset some default styles */
+]]]]]/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +7,24 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #2a2a2a;  /* Dark greyish black background */
+    background-color: #1f1f1f;  /* Darker, more appealing greyish black background */
     color: #fff;  /* White text for contrast */
     min-height: 100vh;  /* Ensure the body takes up full height */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #444, #222);  /* Grey to black gradient */
+    background: linear-gradient(135deg, #777, #333);  /* Smooth grey-to-black gradient */
     width: 100%;
     padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Light shadow for the header */
 }
 
 .header-content {
