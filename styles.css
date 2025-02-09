@@ -35,19 +35,25 @@ header {
     margin-right: 10px;
 }
 
-/* Game Selection Grid */
+/* Game Selection Grid (Main Page) */
 .game-selection {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 games per row */
-    gap: 10px; /* Reduced spacing between rows */
+    gap: 5px; /* Reduced spacing between rows & columns */
     justify-content: center;
     padding: 15px;
 }
 
 /* Game Icons */
+.game-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .game-icon img {
-    width: 100px;  /* Smaller but consistent */
-    height: 100px;
+    width: 140px;  /* Larger icons */
+    height: 140px; /* Same height to match width */
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
