@@ -39,9 +39,12 @@ header {
 .game-selection {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 games per row */
-    gap: 5px; /* Reduced spacing between rows & columns */
+    gap: 0px; /* No spacing */
     justify-content: center;
-    padding: 15px;
+    padding: 0;
+    width: 100%;
+    max-width: 750px; /* Controls max width for clean layout */
+    margin: 0 auto;
 }
 
 /* Game Icons */
@@ -52,16 +55,16 @@ header {
 }
 
 .game-icon img {
-    width: 140px;  /* Larger icons */
-    height: 140px; /* Same height to match width */
+    width: 150px;  /* Larger icons */
+    height: 150px; /* Same height to match width */
     object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 5px; /* Slight rounding for clean look */
+    transition: transform 0.2s ease-in-out;
 }
 
 /* Hover Effect */
 .game-icon img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Game Page - Larger Iframe */
@@ -73,9 +76,9 @@ header {
 }
 
 .game-frame {
-    width: 90%; /* Adjusted to fit screen better */
-    max-width: 900px; /* Limits excessive stretching */
-    height: 600px; /* Increased height for better gameplay */
+    width: 90%;
+    max-width: 900px;
+    height: 600px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
