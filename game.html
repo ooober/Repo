@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-button">⬅ Back to Home</a>
+    </header>
+
+    <section id="game-container">
+        <iframe id="game-frame" class="game-frame" allow="accelerometer; gyroscope; gamepad; autoplay; payment; fullscreen; microphone; clipboard-read; clipboard-write" 
+            sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups-to-escape-sandbox">
+        </iframe>
+    </section>
+
+    <script>
+        // Get the game URL from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameUrl = urlParams.get('game');
+
+        if (gameUrl) {
+            document.getElementById('game-frame').src = gameUrl;
+        } else {
+            document.getElementById('game-container').innerHTML = "<p>Invalid game link</p>";
+        }
+    </script>
+
+</body>
+</html>
